@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ArticleController;
 
 
 /*
@@ -41,3 +42,5 @@ Route::get('client', function(){
 })->name('client')->middleware('client');
 
 Route::resource("/users", MemberController::class);
+
+Route::get('/articles', ArticleController::class, 'index');
