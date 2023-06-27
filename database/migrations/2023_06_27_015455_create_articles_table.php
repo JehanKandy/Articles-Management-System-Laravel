@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('add_user');
             $table->string('article_name');
             $table->string('article_data');
-            
+            $table->json('tags');
             $table->timestamps();
         });
     }
