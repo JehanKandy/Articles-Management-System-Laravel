@@ -9,3 +9,7 @@
         echo "@extends('layouts.client_dash')";
     }
 @endphp
+
+@section('content')
+    
+@endsection
