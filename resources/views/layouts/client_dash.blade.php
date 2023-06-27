@@ -98,6 +98,8 @@
         <div class="list-group list-group-flush my-3">
             <a href="{{url('/admin')}}" class="list-group-item list-group-item-action bg-transparent second-text active"><i
                     class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+            <a href="{{url('/articles')}}" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+                    class="fas fa-book-reader me-2"></i>Articles</a>
             
 
             
