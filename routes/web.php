@@ -43,4 +43,4 @@ Route::get('client', function(){
 
 Route::resource("/users", MemberController::class);
 
-Route::get('/articles', ArticleController::class, 'index');
+Route::resource('/articles', ArticleController::class);
