@@ -41,4 +41,3 @@ Route::get('client', function(){
 })->name('client')->middleware('client');
 
 Route::resource("/users", MemberController::class);
-Route::resource("/product", ProductController::class);
