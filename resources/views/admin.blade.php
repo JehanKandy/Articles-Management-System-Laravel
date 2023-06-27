@@ -1,5 +1,5 @@
 @extends('layouts.admin_dash')
-
+@include('layouts.header')
 
 @section('content')
 {{-- <div class="container">
@@ -22,14 +22,7 @@
     </div>
 </div> --}}
 
-@php
-                            
 
-
-  
-print_r($id);
-
-@endphp
 
 
         <div class="admin-card">

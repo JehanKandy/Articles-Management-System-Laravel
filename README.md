@@ -1,1 +1,1 @@
-# Articles Management System Laravel
+# Laravel Products Management

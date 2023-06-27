@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\MemberController;
+use App\Http\Controllers\ProductController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -38,4 +40,5 @@ Route::get('client', function(){
     return view('client');
 })->name('client')->middleware('client');
 
-Route::resource("/users", UserController::class);
+Route::resource("/users", MemberController::class);
+Route::resource("/product", ProductController::class);
