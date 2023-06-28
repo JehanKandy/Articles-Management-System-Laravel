@@ -50,6 +50,8 @@ class ArticleController extends Controller
                 $imageName = time().'_'.$file->getClientOriginalName();
                 $request['article_id']=$articles->id;
                 $request['images']=$imageName;
+                $file->move(\public_path("/images"),$imageName);
+                
             }
         }
     }
