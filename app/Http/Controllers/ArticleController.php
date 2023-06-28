@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\ArticleImages;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
@@ -35,8 +36,9 @@ class ArticleController extends Controller
             $imageName = time().'_'.$file->getClientOriginalName();
             $file->move(\public_path("cover/"),$imageName);
 
+            $userAdd = Auth::user()->name;
             $articles = new Article([
-                "add_user" => $request->add_user,
+                "add_user" => $request->userAdd,
                 "article_name" => $request->article_name,
                 "article_data" => $request->article_data,
                 "cover" => $imageName,
