@@ -16,6 +16,9 @@
     @extends('layouts.admin_dash')
 @endif
 
+@if (Auth::user()->role == 2)
+    @extends('layouts.staff_dash')
+@endif
 
 @include('layouts.header')
 
