@@ -11,6 +11,7 @@
 
 @section('content')
     <div class="admin-card">
-        hi all
+        <h4>Articles</h4>
+        <hr>
     </div>
 @endsection
