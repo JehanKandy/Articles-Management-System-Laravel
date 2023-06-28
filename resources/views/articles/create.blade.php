@@ -14,6 +14,7 @@
             <h3>Create New Article</h3>
             <hr>
             <form action="{{ url('articles') }}" method="POST" enctype="multipart/form-data">
+                @csrf
                 <div class="row">
                     <div class="col-lg-6">
                         <label for="add_user">Owner</label>
