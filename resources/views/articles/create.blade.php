@@ -33,6 +33,12 @@
                         <textarea name="article_data" cols="30" rows="10" class="form-control" style="resize: none;"></textarea>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="cover">
+                    </div>
+                    <div class="col-lg-6"></div>
+                </div>
             </form>
         </div>
     </div>    
