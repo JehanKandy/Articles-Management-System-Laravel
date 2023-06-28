@@ -35,6 +35,12 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-lg-12">
+                        <label for="article_data">Article Tags</label>
+                        <textarea name="article_data" cols="30" rows="10" class="form-control" style="resize: none;"></textarea><br>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-lg-6">
                         <label for="article_data">Cover Image</label>
                         <input type="file" id="input-file-now-custom-3" class="form-control" name="cover">
