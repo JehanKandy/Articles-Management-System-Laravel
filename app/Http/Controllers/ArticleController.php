@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\ArticleImages;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -51,7 +52,7 @@ class ArticleController extends Controller
                 $request['article_id']=$articles->id;
                 $request['images']=$imageName;
                 $file->move(\public_path("/images"),$imageName);
-                
+                ArticleImages::
             }
         }
     }
