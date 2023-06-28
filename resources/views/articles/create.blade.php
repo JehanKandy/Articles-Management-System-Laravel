@@ -43,6 +43,14 @@
                         <input type="file" id="input-file-now-custom-3" class="form-control" name="images[]" multiple>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type="reset" value="Clear" class="btn btn-secondary">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="submit" value="Add Article" class="btn btn-success">
+                    </div>
+                </div>
             </form>
         </div>
     </div>    
