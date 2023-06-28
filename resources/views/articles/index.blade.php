@@ -13,5 +13,13 @@
     <div class="admin-card">
         <h4>Articles</h4>
         <hr>
+        <br>
+        <table class="table">
+            <thead class="table-primary">
+                <tr>
+                    
+                </tr>
+            </thead>
+        </table>
     </div>
 @endsection
