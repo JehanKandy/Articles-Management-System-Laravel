@@ -1,6 +1,12 @@
 @extends('layouts.dash')
 @include('layouts.header')
 
+@if (Auth::user()->role == 2 || Auth::user()->role == 3)
+    @php
+        return redirect()->route('user');
+    @endphp
+@endif
+
 @section('content')
 
     <div class="admin-card">
