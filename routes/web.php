@@ -43,4 +43,8 @@ Route::get('client', function(){
 
 Route::resource("/users", MemberController::class);
 
-Route::resource('/articles', ArticleController::class);
+Route::get('/articles', [ArticleController::class, 'index']);
+
+Route::get('/articles/create',function(){
+    return view('articles.create');
+});
