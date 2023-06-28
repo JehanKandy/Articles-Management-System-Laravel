@@ -22,6 +22,10 @@
                         @endphp
                         <input type="text" name="add_user" value=" @php echo Auth::user()->name; @endphp" class="form-control" disabled>
                     </div>
+                    <div class="col-lg-6">
+                        <label for="article_name">Article Title</label>
+                        <input type="text" name="article_name" class="form-control">
+                    </div>
                 </div>
             </form>
         </div>
