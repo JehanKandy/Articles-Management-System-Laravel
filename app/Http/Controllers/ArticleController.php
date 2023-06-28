@@ -33,7 +33,7 @@ class ArticleController extends Controller
         if($request->hasFile("cover")){
             $file = $request->file("cover");
             $imageName = time().'_'.$file->getClientOriginalName();
-            $file->name(\public_path("cover/"),$imageName);
+            $file->move(\public_path("cover/"),$imageName);
 
             $articles = new Article([
                 "add_user" => $request->add_user,
