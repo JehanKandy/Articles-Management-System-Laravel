@@ -53,7 +53,7 @@ class ArticleController extends Controller
                 $request['article_id']=$articles->id;
                 $request['images']=$imageName;
                 $file->move(\public_path("/images"),$imageName);
-                ArticleImages::create($request->all());
+                json_encode(ArticleImages::create($request->all()));
             }
         }
         return redirect('/articles');
