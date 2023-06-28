@@ -29,6 +29,17 @@
                     <th>Action</th>
                 </tr>
             </thead>
+            <tbody>
+                @foreach ($articles as $article)
+                  <tr>
+                      <th scope="row">{{ $loop->iteration }}</th>
+                      <td>{{ $article->article_name }}</td>
+                      <td>{{ $article->add_user }}</td>
+                      <td>{{ $article->body }}</td>
+
+                  </tr>
+                @endforeach
+              </tbody>
         </table>
     </div>
 @endsection
