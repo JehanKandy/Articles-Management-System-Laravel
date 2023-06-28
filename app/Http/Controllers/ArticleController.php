@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Article;
 use App\Models\ArticleImages;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class ArticleController extends Controller
 {
@@ -31,33 +31,32 @@ class ArticleController extends Controller
     public function store(Request $request)
     {
         if($request->hasFile("cover")){
-            $file = $request->file("cover");
-            $imageName = time().'_'.$file->getClientOriginalName();
+            $file=$request->file("cover");
+            $imageName=time().'_'.$file->getClientOriginalName();
             $file->move(\public_path("cover/"),$imageName);
-
+ 
             $articles = new Article([
-                "add_user" => $request->add_user,
-                "article_name" => $request->article_name,
-                "article_data" => $request->article_data,
+                "add_user" =>$request->add_user,
+                "article_name" =>$request->article_name,
+                "article_data" =>$request->article_data,
                 "tags" => $request->tags,
-                "cover" => $imageName,
-                
+                "cover" =>$imageName,
             ]);
-
-            $articles->save();
+           $articles->save();
         }
-        if($request->hasFile("images")){
-            $files = $request->file("images");
-            foreach($files as $file){
-                $imageName=time().'_'.$file->getClientOriginalName();
-                $request['article_id']=$articles->id;
-                $request['image']=$imageName;
-                $file->move(\public_path("/images"),$imageName);
-                ArticleImages::create($request->all());
-
-            }
-        }
-        return redirect('/articles');
+ 
+        // if($request->hasFile("images")){
+        //         $files=$request->file("images");
+        //         foreach($files as $file){
+        //             $imageName=time().'_'.$file->getClientOriginalName();
+        //             $request['article_id']=$articles->id;
+        //             $request['images']=$imageName;
+        //             $file->move(\public_path("/images"),$imageName);
+        //             ArticleImages::create($request->all());
+        //         }
+        // }
+ 
+        return redirect("/");
     }
 
     /**

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\ArticleImages;
 
 class Article extends Model
 {
@@ -19,6 +20,6 @@ class Article extends Model
     ];
 
     public function images(){
-        return $this->hasMany(Image::class);
+        return $this->hasMany(ArticleImages::class);
     }    
 }
