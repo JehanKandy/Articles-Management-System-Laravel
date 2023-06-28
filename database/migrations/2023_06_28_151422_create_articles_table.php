@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text("cover");
             $table->string('tags');
             $table->timestamps();
+
         });
     }
 

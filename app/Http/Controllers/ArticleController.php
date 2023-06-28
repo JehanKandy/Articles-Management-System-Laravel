@@ -39,8 +39,9 @@ class ArticleController extends Controller
                 "add_user" => $request->add_user,
                 "article_name" => $request->article_name,
                 "article_data" => $request->article_data,
-                "cover" => $imageName,
                 "tags" => $request->tags,
+                "cover" => $imageName,
+                
             ]);
 
             $articles->save();
