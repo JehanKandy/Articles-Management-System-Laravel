@@ -2,9 +2,7 @@
 @include('layouts.header')
 
 @if (Auth::user()->role == 2 || Auth::user()->role == 3)
-    @php
-        return redirect()->route('user');
-    @endphp
+    {{ Redirect::to('/users') }}
 @endif
 
 @section('content')
