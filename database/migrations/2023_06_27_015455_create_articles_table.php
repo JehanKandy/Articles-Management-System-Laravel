@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('article_name');
             $table->string('article_data');
             $table->text("cover");
-            $table->json('tags');
+            $table->string('tags');
             $table->timestamps();
         });
     }
