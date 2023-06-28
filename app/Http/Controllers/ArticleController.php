@@ -56,7 +56,7 @@ class ArticleController extends Controller
         //         }
         // }
  
-        return redirect("/");
+        return redirect("/articles");
     }
 
     /**
