@@ -6,7 +6,7 @@
     @extends('layouts.staff_dash')
 @endif --}}
 
-
+@extends('layouts.dash')
 @include('layouts.header')
 
 @section('content')

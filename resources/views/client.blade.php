@@ -1,4 +1,4 @@
-@extends('layouts.client_dash')
+@extends('layouts.dash')
 @include('layouts.header')
 
 @section('content')
