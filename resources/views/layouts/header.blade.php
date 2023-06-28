@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin Dashboard</title>
+   
     @php
-        if (condition) {
-            # code...
+        if (Auth::check()) {
+           
+        }
+        else{
+           
+           echo "<title>Dashboard</title>";
         }
     @endphp
     <link rel="stylesheet" href="{{ url('css/style.css') }}">
