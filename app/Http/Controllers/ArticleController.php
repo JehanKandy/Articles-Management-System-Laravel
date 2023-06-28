@@ -35,7 +35,11 @@ class ArticleController extends Controller
             $file->name(\public_path("cover/"),$imageName);
 
             $articles = new Article([
-
+                "add_user" => $request->add_user,
+                "article_name" => $request->article_name,
+                "article_data" => $request->article_data,
+                "cover" => $imageName,
+                "tags" => $request->tags,
             ]);
         }
     }
