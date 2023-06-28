@@ -34,7 +34,9 @@ class ArticleController extends Controller
             $imageName = time().'_'.$file->getClientOriginalName();
             $file->name(\public_path("cover/"),$imageName);
 
-            
+            $articles = new Article([
+
+            ]);
         }
     }
 
