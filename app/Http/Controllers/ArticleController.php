@@ -49,11 +49,12 @@ class ArticleController extends Controller
         if($request->hasFile("images")){
             $files = $request->file("images");
             foreach($files as $file){
-                $imageName = time().'_'.$file->getClientOriginalName();
+                $imageName=time().'_'.$file->getClientOriginalName();
                 $request['article_id']=$articles->id;
-                $request['images']=$imageName;
+                $request['image']=$imageName;
                 $file->move(\public_path("/images"),$imageName);
-                json_encode(ArticleImages::create($request->all()));
+                ArticleImages::create($request->all());
+
             }
         }
         return redirect('/articles');
