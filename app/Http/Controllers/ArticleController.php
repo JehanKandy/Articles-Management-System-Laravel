@@ -41,6 +41,8 @@ class ArticleController extends Controller
                 "cover" => $imageName,
                 "tags" => $request->tags,
             ]);
+
+            $articles->save();
         }
     }
 
