@@ -35,7 +35,8 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
-                        <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="cover">
+                        <label for="article_data">Body of The Article</label>
+                        <input type="file" id="input-file-now-custom-3" class="form-control" name="cover">
                     </div>
                     <div class="col-lg-6"></div>
                 </div>
