@@ -14,6 +14,9 @@
         <h4>Articles</h4>
         <hr>
         <br>
+        <a href="{{ url('/articles/create') }}" class="btn btn-success" title="Add New Student">
+            <i class="fa fa-plus" aria-hidden="true"></i> Add New Article
+        </a>
         <table class="table">
             <thead class="table-primary">
                 <tr>
