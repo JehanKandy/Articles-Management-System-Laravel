@@ -2,7 +2,7 @@
 @include('layouts.header')
 
 @if (Auth::user()->role == 2 || Auth::user()->role == 3)
-    {{ Redirect::to('/users') }}
+<script>window.location = "/users";</script>
 @endif
 
 @section('content')
