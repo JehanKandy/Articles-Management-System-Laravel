@@ -40,7 +40,7 @@
                     </div>
                     <div class="col-lg-6">
                         <label for="article_data">Images</label>
-                        <input type="file" id="input-file-now-custom-3" class="form-control" name="cover">
+                        <input type="file" id="input-file-now-custom-3" class="form-control" name="images[]" multiple>
                     </div>
                 </div>
             </form>
