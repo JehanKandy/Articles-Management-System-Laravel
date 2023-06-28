@@ -45,7 +45,11 @@ class ArticleController extends Controller
             $articles->save();
         }
         if($request->hasFile("images")){
-            $file = $request->file("images");
+            $files = $request->file("images");
+            foreach($files as $file){
+                $imageName = time().'_'.$file->getClientOriginalName();
+
+            }
         }
     }
 
