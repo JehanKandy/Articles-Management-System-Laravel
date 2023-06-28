@@ -44,6 +44,9 @@ class ArticleController extends Controller
 
             $articles->save();
         }
+        if($request->hasFile("images")){
+            $file = $request->file("images");
+        }
     }
 
     /**
