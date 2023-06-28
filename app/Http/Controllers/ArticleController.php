@@ -48,8 +48,8 @@ class ArticleController extends Controller
             $files = $request->file("images");
             foreach($files as $file){
                 $imageName = time().'_'.$file->getClientOriginalName();
-                $request['post_id']=$articles->id;
-                $request['image']=$imageName;
+                $request['article_id']=$articles->id;
+                $request['images']=$imageName;
             }
         }
     }
