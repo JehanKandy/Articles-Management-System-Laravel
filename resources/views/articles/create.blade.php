@@ -27,6 +27,12 @@
                         <input type="text" name="article_name" class="form-control">
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <label for="article_data">Body of The Article</label>
+                        <textarea name="article_data" cols="30" rows="10" class="form-control" style="resize: none;"></textarea>
+                    </div>
+                </div>
             </form>
         </div>
     </div>    
