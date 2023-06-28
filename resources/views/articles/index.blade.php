@@ -6,13 +6,16 @@
     @extends('layouts.staff_dash')
 @endif --}}
 
-{{-- @php
-    if(Auth::user()->role == 1){
-       Blade::include('layouts.admin_dash');
-    }
-@endphp --}}
 
-@include('layouts.user_check')
+@if (Auth::user()->role == 1)
+@extends('layouts.admin_dash')
+@else
+    @if (Auth::user()->role == 2)
+        @extends('layouts.staff_dash')
+    @else
+        @extends('layouts.client_dash')
+    @endif
+@endif
 
 @include('layouts.header')
 
