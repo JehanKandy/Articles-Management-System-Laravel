@@ -48,3 +48,4 @@ Route::get('/articles', [ArticleController::class, 'index']);
 Route::get('/articles/create',function(){
     return view('articles.create');
 });
+Route::post('/articles', [ArticleController::class, 'store']);
