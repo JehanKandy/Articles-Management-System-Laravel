@@ -48,7 +48,7 @@ class ArticleController extends Controller
             $files = $request->file("images");
             foreach($files as $file){
                 $imageName = time().'_'.$file->getClientOriginalName();
-
+                
             }
         }
     }
