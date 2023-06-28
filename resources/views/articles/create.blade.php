@@ -24,7 +24,7 @@
                     </div>
                     <div class="col-lg-6">
                         <label for="article_name">Article Title</label>
-                        <input type="text" name="article_name" class="form-control">
+                        <input type="text" name="article_name" class="form-control"><br>
                     </div>
                 </div>
                 <div class="row">
