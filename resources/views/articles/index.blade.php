@@ -10,5 +10,7 @@
 @include('layouts.header')
 
 @section('content')
-    hi all
+    <div class="admin-card">
+        hi all
+    </div>
 @endsection
