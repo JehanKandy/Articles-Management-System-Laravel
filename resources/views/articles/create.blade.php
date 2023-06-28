@@ -35,10 +35,13 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
-                        <label for="article_data">Body of The Article</label>
+                        <label for="article_data">Cover Image</label>
                         <input type="file" id="input-file-now-custom-3" class="form-control" name="cover">
                     </div>
-                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6">
+                        <label for="article_data">Images</label>
+                        <input type="file" id="input-file-now-custom-3" class="form-control" name="cover">
+                    </div>
                 </div>
             </form>
         </div>
