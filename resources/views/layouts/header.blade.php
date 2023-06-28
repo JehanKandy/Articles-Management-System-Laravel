@@ -8,7 +8,15 @@
    
     @php
         if (Auth::check()) {
-           
+           if(Auth::user()->role == 1){
+                echo "<title>Admin Dashboard</title>";
+           }
+           elseif (Auth::user()->role == 2) {
+                echo "<title>Staff Dashboard</title>";
+           }
+           elseif (Auth::user()->role == 3) {
+                echo "<title>Client Dashboard</title>";
+           }
         }
         else{
            
