@@ -16,7 +16,15 @@
             <form action="{{ url('articles') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-6">
+                        <label for="add_user">Owner</label>
+                        @php
+                            $user = Auth::user()->name;
+                        @endphp
+                        <input type="text" value=" @php echo Auth::user()->name; @endphp" class="form-control" disabled>
+                        <input type="hidden" name="add_user" value=" @php echo Auth::user()->name; @endphp"> 
+                    </div>
+                    <div class="col-lg-6">
                         <label for="article_name">Article Title</label>
                         <input type="text" name="article_name" class="form-control"><br>
                     </div>
