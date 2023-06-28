@@ -17,7 +17,13 @@
         <table class="table">
             <thead class="table-primary">
                 <tr>
-                    
+                    <th>ID</th>
+                    <th>Article Name</th>
+                    <th>Owner</th>
+                    <th>Article Tags</th>
+                    <th>Created Date</th>
+                    <th>Last Update</th>
+                    <th>Action</th>
                 </tr>
             </thead>
         </table>
