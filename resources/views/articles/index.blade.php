@@ -16,7 +16,7 @@
         <a href="{{ url('/articles/create') }}" class="btn btn-success" title="Add New Student">
             <i class="fa fa-plus" aria-hidden="true"></i> Add New Article
         </a>
-        <br>
+        <br><br>
         <table class="table">
             <thead class="table-primary">
                 <tr>
