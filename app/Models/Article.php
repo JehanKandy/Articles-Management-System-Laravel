@@ -18,5 +18,7 @@ class Article extends Model
         'updated_at',
     ];
 
-    
+    public function images(){
+        return $this->hasMany(Image::class);
+    }    
 }
