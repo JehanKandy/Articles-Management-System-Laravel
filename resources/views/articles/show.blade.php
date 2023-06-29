@@ -9,9 +9,10 @@
         width: 100%;
     }
     .tag{
-        background-color: blue;
+        background-color: rgb(91, 91, 248);
         color: white;
-        padding: 10px;
+        padding: 5px;
+        border-radius: 5px; 
     }
 </style>
 <div class="article-content">
@@ -26,8 +27,16 @@
                 {{ $articles->article_data }}
             </p>
             <p>
-                <span class="tag">{{ $articles->tags }}</span>
+                <span class="tag">#{{ $articles->tags }}</span>
             </p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <span>Created at : {{ $articles->tags }}</span>
+                </div>
+                <div class="col-lg-6">
+                    <span>Last Update at : {{ $articles->tags }}</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
