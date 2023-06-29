@@ -24,8 +24,11 @@
                 @method('PUT')
 
                 <div class="form-group">
+                    <input type="hidden" name="">
                     <label for="add_user">Owner</label>
-                    <input type="text" name="add_user" value="{{ $articles->add_user }}" class="form-control">
+                    <input type="text" name="add_user" value="{{ $articles->add_user }}" class="form-control" disabled>
+                    <input type="hidden" name="add_user" value="{{ $articles->add_user }}">
+                    
                 </div>
             </form>
         </div>
