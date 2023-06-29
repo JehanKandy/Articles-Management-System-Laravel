@@ -85,9 +85,16 @@ class ArticleController extends Controller
         $articles = Article::find($id);
         if($request->hasFile("cover")){
             if(FIle::exists("cover/".$articles->cover)){
-                File::delete
+                File::delete("cover/".$articles->cover);
             }
+            $file = $request->file("cover");
+            $articles->cover=time()."_".$file->getClientOriginalName();
+            $file->move(\public_path("/cover"),$articles->cover);
+            $request['cover'] = $articles->cover;
         }
+        $articles->update([
+            ""
+        ]);
     }
 
     /**
