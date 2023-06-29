@@ -19,6 +19,7 @@
 <div class="article-content">
     <div class="container">
         <div class="admin-card">
+            <a href="{{ url('/articles')}}"><button class="btn btn-primary">Back</button></a><br><br>
             <form action="{{  url('articles/' .$articles->id) }}" method="POST">
                 @csrf
                 @method('PUT')
