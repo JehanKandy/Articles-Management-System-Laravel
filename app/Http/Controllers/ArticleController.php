@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Article;
-use App\Models\ArticleImages;
+// use App\Models\ArticleImages;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
@@ -82,23 +82,24 @@ class ArticleController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $articles = Article::find($id);
+        $articles=Article::findOrFail($id);
         if($request->hasFile("cover")){
-            if(FIle::exists("cover/".$articles->cover)){
+            if (File::exists("cover/".$articles->cover)) {
                 File::delete("cover/".$articles->cover);
             }
-            $file = $request->file("cover");
+            $file=$request->file("cover");
             $articles->cover=time()."_".$file->getClientOriginalName();
             $file->move(\public_path("/cover"),$articles->cover);
-            $request['cover'] = $articles->cover;
+            $request['cover']=$articles->cover;
         }
-        $articles->update([
-            "add_user" => $request->add_user,
-            "article_name" => $request->article_name,
-            "article_data" => $request->article_data,
-            "tags" => $request->tags,
-            "cover" => $articles->cover,
-        ]);
+    
+           $articles->update([
+               "add_user" =>$request->add_user,
+               "article_name"=>$request->article_name,
+               "article_data"=>$request->article_data,
+               "tags"=>$request->tags,
+               "cover"=>$articles->cover,
+           ]);
 
         return redirect('/articles');
     }
@@ -108,6 +109,12 @@ class ArticleController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $articles = Article::find($id);
+
+        if(File::exists("cover/".$articles->cover)){
+            File::delete("cover/".$articles->cover);
+        }
+        $articles->delete();
+        return back();
     }
 }
