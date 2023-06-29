@@ -21,3 +21,9 @@
 - - - others can read only
 
 # How to Start the Project
+
+- First Download this Project
+- and open the Project in VS Code or any code Editer
+- and open a new Terminal 
+- type following commands
+- - 
