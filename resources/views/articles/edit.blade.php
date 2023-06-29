@@ -20,6 +20,12 @@
 <script>window.location = "/articles";</script>
 @endif
 
+@if ()
+    
+@else
+    
+@endif
+
 <div class="article-content">
     <div class="container">
         <div class="admin-card">
