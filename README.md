@@ -40,7 +40,7 @@
         
         composer require laravel/ui
 
-<br>
+- hit enter
  
         php artisan ui bootstrap --auth
         
