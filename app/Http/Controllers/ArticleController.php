@@ -93,8 +93,14 @@ class ArticleController extends Controller
             $request['cover'] = $articles->cover;
         }
         $articles->update([
-            ""
+            "add_user" => $request->add_user,
+            "article_name" => $request->article_name,
+            "article_data" => $request->article_data,
+            "tags" => $request->tags,
+            "cover" => $articles->cover,
         ]);
+
+        return redirect('/articles');
     }
 
     /**
