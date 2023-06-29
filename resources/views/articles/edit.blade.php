@@ -16,7 +16,7 @@
     }
 </style>
 
-@if (auth()->user()->name != $articles->add_user)
+@if (auth()->user()->name != $articles->add_user || auth()->user()->role == 2 || auth()->user()->role == 3)
 <script>window.location = "/articles";</script>
 @endif
 
