@@ -5,8 +5,8 @@
         background-color: #c1e0ef;
         padding: 20px 0;
     }
-    .cover-img{
-        width: 100%;
+    .update-cover{
+        width: 50%;
     }
     .tag{
         background-color: rgb(91, 91, 248);
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    Cover Image
+                    Cover Image <br><br>
                     <div class="col-lg-6">
                         <img src="/cover/{{ $articles->cover }}" alt="Update Cover Image" class="update-cover">
                     </div>
