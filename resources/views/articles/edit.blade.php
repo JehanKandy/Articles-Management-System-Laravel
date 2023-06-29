@@ -55,10 +55,10 @@
                 <div class="row">
                     Cover Image
                     <div class="col-lg-6">
-
+                        <img src="/cover/{{ $articles->cover }}" alt="Update Cover Image" class="update-cover">
                     </div>
                     <div class="col-lg-6">
-                        <input type="file" id="input-file-now-custom-3" class="form-control" name="cover" value="{{ $articles->cover }}"><br>
+                        <input type="file" id="input-file-now-custom-3" class="form-control" name="cover"><br>
                     </div>
                 </div>
                 <div class="row">
