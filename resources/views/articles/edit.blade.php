@@ -49,10 +49,14 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <label for="tags">Tag</label>
-                        <input type="text" name="tags" value="{{ $articles->tags }}" class="form-control">
+                        <input type="text" name="tags" value="{{ $articles->tags }}" class="form-control"><br>
                     </div>
                 </div>
-
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input type="submit" value="Update Article" class="btn btn-success">
+                    </div>
+                </div>
             </form>
         </div>
     </div>
