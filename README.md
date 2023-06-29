@@ -6,4 +6,6 @@
 - - Staff
 - - Client
 
-- 
+- Features of this project
+- - User Management
+- - Articles Management
