@@ -24,6 +24,12 @@
 
 - First Download this Project
 - and open the Project in VS Code or any code Editer
+
+- Update .env file
+- - find and replace follwing
+
+        DB_DATABASE=articles_management
+
 - and open a new Terminal 
 
 - type following commands
