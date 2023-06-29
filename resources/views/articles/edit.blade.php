@@ -19,7 +19,7 @@
 <div class="article-content">
     <div class="container">
         <div class="admin-card">
-            <form action="{{ route('articles.update', $articles->id) }}" method="POST">
+            <form action="{{  url('articles/' .$articles->id) }}" method="POST">
                 @csrf
                 @method('PUT')
 
