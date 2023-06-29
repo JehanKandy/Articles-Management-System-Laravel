@@ -25,5 +25,9 @@
 - First Download this Project
 - and open the Project in VS Code or any code Editer
 - and open a new Terminal 
+
 - type following commands
-- - 
+- - composer require laravel/ui
+- - php artisan ui bootstrap --auth
+- - npm install
+- - npm run dev
