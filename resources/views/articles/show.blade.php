@@ -8,6 +8,11 @@
     .cover-img{
         width: 100%;
     }
+    .tag{
+        background-color: blue;
+        color: white;
+        padding: 10px;
+    }
 </style>
 <div class="article-content">
     <div class="container">
