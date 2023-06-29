@@ -19,7 +19,15 @@
 <div class="article-content">
     <div class="container">
         <div class="admin-card">
-            
+            <form action="{{ route('product.update', $product->id) }}" method="POST">
+                @csrf
+                @method('PUT')
+
+                <div class="form-group">
+                    <label for="add_user">Owner</label>
+                    <input type="text" name="add_user" value="{{ $articles->add_user }}" class="form-control">
+                </div>
+            </form>
         </div>
     </div>
 </div>
