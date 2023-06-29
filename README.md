@@ -69,3 +69,16 @@
         LARAVEL v10.13.5  plugin v0.7.8
 
         ➜  APP_URL: http://localhost
+
+
+- Then start new Terminal Again
+- and type followin and hit enter
+
+        php artisan serve
+
+- after that you can see followin
+
+
+        INFO  Server running on [http://127.0.0.1:8000].  
+
+        Press Ctrl+C to stop the server
