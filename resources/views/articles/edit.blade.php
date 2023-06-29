@@ -16,8 +16,8 @@
     }
 </style>
 
-@if (Auth::user->)
-    
+@if (Auth::user->name != $articles->add_user)
+<script>window.location = "/articles";</script>
 @endif
 
 <div class="article-content">
