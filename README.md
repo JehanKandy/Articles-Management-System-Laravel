@@ -40,8 +40,17 @@
         
         composer require laravel/ui
 
+<br>
+ 
         php artisan ui bootstrap --auth
-
+        
+<br>
+ 
         npm install
-
+        
+<br>
+ 
         npm run dev
+        
+<br>
+ 
