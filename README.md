@@ -44,15 +44,15 @@
  
         php artisan ui bootstrap --auth
         
-<br>
+- hit enter
  
         npm install
         
-<br>
+- hit enter
  
         npm run dev
         
-<br>
+- hit enter
  
 - after you hit enter the `npm run dev` you can see following codes 
 
