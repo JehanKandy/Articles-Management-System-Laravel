@@ -31,10 +31,10 @@
             </p>
             <div class="row">
                 <div class="col-lg-6">
-                    <span>Created at : {{ $articles->tags }}</span>
+                    <span>Created at : {{ $articles->created_at }}</span>
                 </div>
                 <div class="col-lg-6">
-                    <span>Last Update at : {{ $articles->tags }}</span>
+                    <span>Last Update at : {{ $articles->updated_at }}</span>
                 </div>
             </div>
         </div>
