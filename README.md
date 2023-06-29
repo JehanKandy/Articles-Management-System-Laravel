@@ -56,16 +56,16 @@
  
 - after you hit enter the `npm run dev` you can see following codes 
 
-> dev 
-> vite
+        > dev 
+        > vite
 
 
-  VITE v4.3.9  ready in 2543 ms
+        VITE v4.3.9  ready in 2543 ms
 
-  ➜  Local:   http://localhost:5173/
-  ➜  Network: use --host to expose
-  ➜  press h to show help
+        ➜  Local:   http://localhost:5173/
+        ➜  Network: use --host to expose
+        ➜  press h to show help
 
-  LARAVEL v10.13.5  plugin v0.7.8
+        LARAVEL v10.13.5  plugin v0.7.8
 
-  ➜  APP_URL: http://localhost
+        ➜  APP_URL: http://localhost
