@@ -34,6 +34,10 @@
 
         php artisan migrate
 
+- for added users in to table type following
+
+        php artisan db:seed
+
 - and open a new Terminal 
 
 - type following commands
