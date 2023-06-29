@@ -36,14 +36,14 @@
                     <div class="col-lg-6">
                         <div class="form-group">
                             <label for="article_name">Article Title</label>
-                            <input type="text" name="article_name" value="{{ $articles->article_name }}" class="form-control">
+                            <input type="text" name="article_name" value="{{ $articles->article_name }}" class="form-control"><br>
                         </div>
                     </div>                  
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
                         <label for="article_data">Body of The Article</label>
-                        <textarea name="article_data" cols="30" rows="10" class="form-control" value="{{ $articles->article_data }}" style="resize: none;"></textarea><br>
+                        <textarea name="article_data" cols="30" rows="10" class="form-control" style="resize: none;">{{ $articles->article_data }}</textarea><br>
                     </div>
                 </div>
 
