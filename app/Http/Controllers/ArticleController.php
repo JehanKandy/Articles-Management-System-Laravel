@@ -82,7 +82,12 @@ class ArticleController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $articles = Article::find($id);
+        if($request->hasFile("cover")){
+            if(FIle::exists("cover/".$articles->cover)){
+                File::delete
+            }
+        }
     }
 
     /**
