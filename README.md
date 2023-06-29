@@ -29,11 +29,19 @@
 - - find and replace follwing
 
         DB_DATABASE=articles_management
+    
+- type following code for migrate the all tables
+
+        php artisan migrate
 
 - and open a new Terminal 
 
 - type following commands
-- - composer require laravel/ui
-- - php artisan ui bootstrap --auth
-- - npm install
-- - npm run dev
+        
+        composer require laravel/ui
+
+        php artisan ui bootstrap --auth
+
+        npm install
+
+        npm run dev
