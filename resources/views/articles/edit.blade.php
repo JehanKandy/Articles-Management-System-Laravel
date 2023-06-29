@@ -53,6 +53,15 @@
                     </div>
                 </div>
                 <div class="row">
+                    Cover Image
+                    <div class="col-lg-6">
+
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="file" id="input-file-now-custom-3" class="form-control" name="cover" value="{{ $articles->cover }}"><br>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-lg-12">
                         <input type="submit" value="Update Article" class="btn btn-success">
                     </div>
