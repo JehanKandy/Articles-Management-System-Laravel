@@ -16,6 +16,10 @@
     }
 </style>
 
+@if (Auth::user->)
+    
+@endif
+
 <div class="article-content">
     <div class="container">
         <div class="admin-card">
