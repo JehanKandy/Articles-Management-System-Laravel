@@ -20,6 +20,9 @@
             <p>
                 {{ $articles->article_data }}
             </p>
+            <p>
+                <span class="tag">{{ $articles->tags }}</span>
+            </p>
         </div>
     </div>
 </div>
