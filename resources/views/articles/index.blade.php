@@ -41,7 +41,7 @@
                       <td>
                         <a href="{{ url('/articles/' . $article->id) }}" title="View Articles"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
 
-                        @if (Auth::user->role == 1 || Auth::user->name == $article->add_user)
+                        @if (auth()->user()->role == 1 || auth()->user()->name == $article->add_user)
                             <a href="{{ url('/articles/' . $article->id . '/edit') }}" title="Edit Articles"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
 
                             <form method="POST" action="{{ url('/articles' . '/' . $article->id) }}" accept-charset="UTF-8" style="display:inline">
