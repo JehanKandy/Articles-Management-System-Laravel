@@ -17,6 +17,9 @@
             <img src="/cover/{{ $articles->cover }}" class="cover-img" alt="Cover Image">
             <br><br>
             <h1>{{ $articles->article_name }}</h1>
+            <p>
+                {{ $articles->article_data }}
+            </p>
         </div>
     </div>
 </div>
